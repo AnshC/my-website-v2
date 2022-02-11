@@ -16,7 +16,7 @@ export default function Layout ({children}) {
             <ThemeProvider theme={theme}>
                 <div style={styles.main} sx={{ backgroundColor: "background" }}>
                     <Gradient />
-                    <Navbar style={{ zIndex: 10, position: "absolute" }}/>
+                    <Navbar/>
                     <div style={{ zIndex: 10, position: "relative" }}>
                         {children}
                     </div>

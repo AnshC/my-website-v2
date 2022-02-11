@@ -37,7 +37,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <p sx={{ color: "text" }}>Welcome to my digital canvas. A collection of <span id="desc">design, code, and expression</span> in one website. While you're around, feel free to check out my:</p>
+        <p sx={{ color: "text" }}>Welcome to my digital canvas. A collection of <span id="desc">design, code, and expression</span> in one website. While you're here, feel free to explore my:</p>
         <ul>
           <li className="icon"  sx={{ color: "grey", ':hover': { color: "accent" } }}>
             <Link href="/www">
