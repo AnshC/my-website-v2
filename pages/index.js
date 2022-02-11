@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 export default function Home() {
   useEffect(()=>{
     const description = document.querySelector('#desc');
-    const descAnnotation = annotate(description, { type: 'box', color: "#92bcea" });
+    const descAnnotation = annotate(description, { type: 'underline', color: "#fff", multiline: true });
     descAnnotation.show() 
     const icons = document.querySelectorAll('.icon')
     icons.forEach((icon)=>{
@@ -39,19 +39,19 @@ export default function Home() {
       <main className={styles.main}>
         <p sx={{ color: "text" }}>Welcome to my digital canvas. A collection of <span id="desc">design, code, and expression</span> in one website. While you're around, feel free to check out my:</p>
         <ul>
-          <li  sx={{ color: "grey", ':hover': { color: "accent" } }}>
+          <li className="icon"  sx={{ color: "grey", ':hover': { color: "accent" } }}>
             <Link href="/www">
-              <a><FaLongArrowAltRight style={customStyles.icon}/><span className="icon"> Web Development Projects</span></a>
+              <a><FaLongArrowAltRight style={customStyles.icon}/><span> Web Development Projects</span></a>
             </Link>
           </li>
-          <li  sx={{ color: "grey", ':hover': { color: "accent" } }}>
+          <li className="icon"  sx={{ color: "grey", ':hover': { color: "accent" } }}>
             <Link href="/design">
-              <a><FaLongArrowAltRight style={customStyles.icon}/><span className="icon"> Graphic Design Portfolio</span></a>
+              <a><FaLongArrowAltRight style={customStyles.icon}/><span> Graphic Design Portfolio</span></a>
             </Link>
           </li>
-          <li  sx={{ color: "grey", ':hover': { color: "accent" } }}>
+          <li className="icon"  sx={{ color: "grey", ':hover': { color: "accent" } }}>
             <Link href="/resume">
-              <a><FaLongArrowAltRight style={customStyles.icon}/><span className="icon"> Resume</span></a>
+              <a><FaLongArrowAltRight style={customStyles.icon}/><span> Resume</span></a>
             </Link>
           </li>
         </ul>
